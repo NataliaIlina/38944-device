@@ -8,13 +8,13 @@
   <body>
 
    <header class="main-header">
-     <a class="logo" href="index.html"><h1>Device</h1></a>
+     <a class="logo" href="index.html">Device</a>
 
      <div class="main-header__inner">
 
        <form class="search-form">
          <label class="search-form__label">
-           <input class="search-form__input" type="search" name="search-field" value="" placeholder="Поиск по сайту">
+           <input class="search-form__input" type="search" name="search-field" placeholder="Поиск по сайту">
            <button class="search-form__button" type="submit">Найти</button>
          </label>
        </form>
@@ -205,29 +205,30 @@
 
      <section class="popular-goods">
        <h2 class="visually-hidden">Список наших товаров:</h2>
-       <!--  Сомневаюсь насчет разметки этого блока  -->
+       <!--  Сомневаюсь насчет разметки этого блока
+      наверное лучше псевдоэлементы -->
        <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/icons/icon1.png" alt="">
+         <img class="popular-goods__image" src="img/popular-1.svg" alt="">
          Виртуальная реальность
        </a>
        <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/icons/icon2.png" alt="">
+         <img class="popular-goods__image" src="img/popular-2.svg" alt="">
          Моноподы для селфи
        </a>
        <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/icons/icon3.png" alt="">
+         <img class="popular-goods__image" src="img/popular-3.svg" alt="">
          Экшн-камеры
        </a>
        <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/icons/icon4.png" alt="">
+         <img class="popular-goods__image" src="img/popular-4.svg" alt="">
          Фитнес-браслеты
        </a>
        <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/icons/icon5.png" alt="">
+         <img class="popular-goods__image" src="img/popular-5.svg" alt="">
          Умные часы
        </a>
        <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/icons/icon6.png" alt="">
+         <img class="popular-goods__image" src="img/popular-6.svg" alt="">
        </a>
      </section>
 
@@ -298,7 +299,7 @@
          <p class="info-block__description">
            Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.
          </p>
-         <div class="info-block__map"></div>
+         <a class="info-block__map" href=""></a>
          <a class="button" href="#">Напишите нам</a>
        </section>
 
@@ -348,10 +349,6 @@
      <div class="modal-feedback__close"></div>
 
      <form class="feedback" method="post" action="#">
-
-       <h2 class="visually-hidden">
-         Напишите нам
-       </h2>
 
        <label class="feedback__label  feedback__label--name">
          Ваше имя:<br>
