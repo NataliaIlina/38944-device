@@ -1,0 +1,76 @@
+.search-form{
+  position: relative;
+  height: 50px;
+  width: 440px;
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search-form__label{
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/search.svg");
+  }
+}
+
+.search-form__input{
+  .link-font;
+  width: 100%;
+  padding: 6px 0 6px;
+  padding-left: 38px;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  &::placeholder{
+    color: @black-30;
+  }
+
+  &:hover::placeholder{
+    color: @black-60;
+  }
+
+  &:focus{
+    color: @black;
+    border-bottom: 2px solid @black;
+  }
+
+  &:focus + .search-form__button{
+    //  opacity: 1;
+    display: block;
+  }
+}
+// по ощущениям кнопка работает на костылях
+// еще при нажатии на кнопку пропадает бордер у инпута(что логично- фокус теряется), но смотритсся как-то не очень
+.search-form__button{
+  .link-font();
+  // opacity: 0;
+  display: none;
+  width: 85px;
+  padding: 6px 0 4px;
+  background: transparent;
+  border: 2px solid @black;
+  outline: none;
+  cursor: pointer;
+
+  &:hover{
+    color: @white;
+    background-color: @black;
+  }
+
+  &:active{
+    // opacity: 1;
+    display: block;
+    color: @white-30;
+    background-color: @black;
+  }
+}

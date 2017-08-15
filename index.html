@@ -3,101 +3,108 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
    <header class="main-header">
-     <a class="logo" href="index.html">Device</a>
 
-     <div class="main-header__inner">
+     <div class="main-header__navigation">
+
+      <a class="logo" href="index.html">Device</a>
+
 
        <form class="search-form">
-         <label class="search-form__label">
-           <input class="search-form__input" type="search" name="search-field" placeholder="Поиск по сайту">
-           <button class="search-form__button" type="submit">Найти</button>
+
+         <label class="search-form__label" for="search">
          </label>
+
+         <input class="search-form__input" type="search" name="search-field" id="search" placeholder="Поиск по сайту">
+
+         <button class="search-form__button" type="submit">Найти</button>
+
        </form>
 
        <div class="user-block">
-         <div class="user-block__login">
-           <a class="user-block__link  user-block__link--login" href="#">Войти</a>
-         </div>
-         <div class="user-block__user-name">
-           <a class="user-block__link" href="#">Валентин Петухов</a>
-           <a class="user-block__link  user-block__link--logout" href="#">Выйти</a>
-         </div>
+           <a class="user-block__link   user-block__link--login" href="#">Войти</a>
+           <a class="user-block__link  user-block__link--compare"  href="#">Сравнить</a>
+           <a class="user-block__link  user-block__link--cart" href="#">Корзина</a>
        </div>
 
-       <div class="buyer-block">
-         <a class="buyer-block__compare" href="#">Сравнить</a>
-         <a class="buyer-block__cart" href="#">Корзина</a>
-       </div>
+
+  <nav class="main-nav">
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item  main-nav__item--sub">
+        <a class="main-nav__link  main-nav__link--sub" href="catalog.html">
+          Каталог товаров
+        </a>
+
+          <div class="sub-nav">
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">
+                  Моноподы для селфи
+                </a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">
+                  Экшн-камеры
+                </a>
+              </li>
+            </ul>
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">
+                  Умные часы
+                </a>
+              </li>
+            </ul>
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">
+                  Квадракоптеры
+                </a>
+              </li>
+            </ul>
+          </div>
+
+      </li>
+    </ul>
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item  main-nav__item--delivery">
+        <a class="main-nav__link" href="#">
+          Доставка
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">
+          Гарантия
+        </a>
+      </li>
+      <li class="main-nav__item  main-nav__item--contacts">
+        <a class="main-nav__link" href="#">
+          Контакты
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+
 
      </div>
-
-     <nav class="main-nav">
-       <ul class="main-nav__list">
-         <li class="main-nav__item">
-           <a class="main-nav__link  main-nav__link--sub" href="catalog.html">
-             Каталог товаров
-           </a>
-             <div class="sub-nav">
-               <ul class="sub-nav__list">
-                 <li class="sub-nav__item">
-                   <a class="sub-nav__link" href="#">
-                     Виртуальная реальность
-                   </a>
-                 </li>
-                 <li class="sub-nav__item">
-                   <a class="sub-nav__link" href="#">
-                     Моноподы для селфи
-                   </a>
-                 </li>
-                 <li class="sub-nav__item">
-                   <a class="sub-nav__link" href="#">
-                     Экшн-камеры
-                   </a>
-                 </li>
-               </ul>
-               <ul class="sub-nav__list">
-                 <li class="sub-nav__item">
-                   <a class="sub-nav__link" href="#">
-                     Фитнес-браслеты
-                   </a>
-                 </li>
-                 <li class="sub-nav__item">
-                   <a class="sub-nav__link" href="#">
-                     Умные часы
-                   </a>
-                 </li>
-               </ul>
-               <ul class="sub-nav__list">
-                 <li class="sub-nav__item">
-                   <a class="sub-nav__link" href="#">
-                     Квадракоптеры
-                   </a>
-                 </li>
-               </ul>
-             </div>
-         </li>
-         <li class="main-nav__item">
-           <a class="main-nav__link" href="#">
-             Доставка
-           </a>
-         </li>
-         <li class="main-nav__item">
-           <a class="main-nav__link" href="#">
-             Гарантия
-           </a>
-         </li>
-         <li class="main-nav__item">
-           <a class="main-nav__link" href="#">
-             Контакты
-           </a>
-         </li>
-       </ul>
-     </nav>
 
      <article class="slider">
        <input class="slider__check1" type="radio" name="radio-check" id="check1" checked>
@@ -198,6 +205,7 @@
        </div>
 
      </article>
+
 
    </header>
 
@@ -310,7 +318,7 @@
    <footer class="footer">
 
      <div class="footer__inner">
-       <a class="logo" href="index.html">Device</a>
+       <a class="logo1" href="index.html">Device</a>
        <div class="footer__user-block">
          <a class="footer__link  footer__link--login" href="#">Войти</a>
          <a class="footer__link  footer__link--logout" href="#">Выйти</a>

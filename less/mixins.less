@@ -1,11 +1,26 @@
+.inner(){
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.link-font(){
+  font-family: @font-open-sans;
+  font-size: @font-size;
+  line-height: @line-height-link;
+  font-weight: @light;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
 .link(){
   color: @black;
 
   &:hover{
-    opacity: 0.6;
+    color: @black-60;
   }
 
   &:active{
-    opacity: 0.3;
+    color: @black-30;
   }
 }
