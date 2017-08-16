@@ -1,0 +1,99 @@
+.services{
+  min-height: 290px;
+  background-color: @gray;
+  border: 1px solid @gray;
+}
+// отрицательный margin поднимает и верхний блок с фоном
+// но если ему задать бордер- то нет)   ???
+.services__inner{
+  .inner();
+  margin-top: -100px;
+  display: flex;
+  align-items: flex-start;
+
+  & input[type=radio]{
+    display: none;
+  }
+}
+
+.services__controls{
+  width: 278px;
+  padding-top: 80px;
+  padding-bottom: 45px;
+  border-right: 7px solid @black;
+}
+
+.services__control{
+  display: block;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.services__slides{
+  margin-left: auto;
+  width: 760px;
+  overflow: hidden;
+}
+
+.services__slides-inner{
+  width: 300%;
+  display: flex;
+}
+
+.services__slide{
+  width: 760px;
+  min-height: 319px;
+  padding-top: 70px;
+
+  &--delivery{
+    background: url("../img/delivery.svg") no-repeat 558px 87px;
+  }
+
+  &--warranty{
+    background: url("../img/warranty.svg") no-repeat 545px 63px;
+  }
+
+  &--credit{
+    background: url("../img/credit.svg") no-repeat 538px 63px;
+  }
+}
+
+.services__title{
+  .title();
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.services__description{
+  .text();
+  width: 450px;
+}
+
+.services__check1:checked ~ .services__slides .services__slides-inner{
+  transform: translate(0);
+}
+.services__check2:checked ~ .services__slides .services__slides-inner{
+  transform: translate(-760px);
+}
+.services__check3:checked ~ .services__slides .services__slides-inner{
+  transform: translate(-1520px);
+}
+
+// очень странная реализация кнопок-переключателей
+// лаконичнее не придумала ничего, выслушаю замечания и предложения, как можно сделать проще.
+.services__check1:checked ~ .services__controls label[for=radio1] span,
+.services__check2:checked ~ .services__controls label[for=radio2] span,
+.services__check3:checked ~ .services__controls label[for=radio3] span{
+  background-color: @black;
+  color: @yellow-text;
+
+  &::after{
+    display: none;
+  }
+}
+
+.services__check1:checked ~ .services__controls label[for=radio1],
+.services__check2:checked ~ .services__controls label[for=radio2],
+.services__check3:checked ~ .services__controls label[for=radio3]{
+  background-color: @black;
+}
