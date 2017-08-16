@@ -203,30 +203,29 @@
 
    <main class="main-content">
 
-     <section class="popular-goods">
+     <section class="popular">
 
-       <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/popular-1.svg" alt="">
+       <a class="popular__link  popular__link--virtual" href="#">
          Виртуальная реальность
        </a>
-       <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/popular-2.svg" alt="">
-         Моноподы для селфи
+
+       <a class="popular__link  popular__link--selfie" href="#">
+         Моноподы для&nbsp;селфи
        </a>
-       <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/popular-3.svg" alt="">
+       <a class="popular__link  popular__link--camera" href="#">
          Экшн-камеры
        </a>
-       <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/popular-4.svg" alt="">
+
+       <a class="popular__link  popular__link--fitness" href="#">
          Фитнес-браслеты
        </a>
-       <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/popular-5.svg" alt="">
+
+       <a class="popular__link  popular__link--smart-watch" href="#">
          Умные часы
        </a>
-       <a class="popular-goods__link" href="#">
-         <img class="popular-goods__image" src="img/popular-6.svg" alt="">
+
+       <a class="popular__link  popular__link--quadcopter" href="#">
+         Квадрокоптеры
        </a>
      </section>
 
@@ -234,6 +233,14 @@
        <input class="services__check1" type="radio" name="radio" id="radio1" checked>
        <input class="services__check2" type="radio" name="radio" id="radio2">
        <input class="services__check3" type="radio" name="radio" id="radio3">
+
+       <div class="services__controls">
+         <label class="services__control  button" for="radio1">Доставка</label>
+         <label class="services__control  button" for="radio2">Гарантия</label>
+         <label class="services__control  button" for="radio3">Кредит</label>
+       </div>
+
+      <div class="services__inner">
 
        <section class="services__slide  services__slide--delivery">
          <h2 class="services__title">Доставка</h2>
@@ -258,16 +265,12 @@
          </p>
        </section>
 
-       <div class="services__controls">
-         <label class="services__control  button" for="radio1">Доставка</label>
-         <label class="services__control  button" for="radio2">Гарантия</label>
-         <label class="services__control  button" for="radio3">Кредит</label>
        </div>
+       
 
      </article>
 
      <section class="popular-brands">
-       <h2 class="visually-hidden">Самые популярные из наших брендов:</h2>
        <a class="popular-brands__link  popular-brands__link--dji" href="#">DJI</a>
        <a class="popular-brands__link  popular-brands__link--spg" href="#">SPGadgets</a>
        <a class="popular-brands__link  popular-brands__link--gopro" href="#">GoPro</a>
