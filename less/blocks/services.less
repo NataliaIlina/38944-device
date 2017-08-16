@@ -1,10 +1,12 @@
 .services{
   min-height: 290px;
   background-color: @gray;
-  border: 1px solid @gray;
+  // border: 1px solid @gray;
+  padding-top: 1px;
 }
 // отрицательный margin поднимает и верхний блок с фоном
 // но если ему задать бордер- то нет)   ???
+// поняла почему- схлопывание же..
 .services__inner{
   .inner();
   margin-top: -100px;
