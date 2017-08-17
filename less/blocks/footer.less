@@ -1,0 +1,135 @@
+.footer{
+  min-height: 205px;
+  padding-top: 55px;
+  padding-bottom: 60px;
+  background-color: @gray-dark;
+  color: @white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__inner{
+  .inner();
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+
+  &:last-child{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+    align-items: center;
+
+    &::after{
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      margin-top: -4px;
+      width: 80px;
+      height: 7px;
+      background-color: @yellow-logo;
+    }
+  }
+}
+
+.footer__user-block{
+  min-width: 325px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link{
+  .link-font();
+  color: @white-70;
+  padding-top: 5px;
+
+  &:hover{
+    color: @white;
+  }
+
+  &:hover .footer__icon{
+    opacity: 0.6;
+  }
+
+  &:active{
+    color: @white-30;
+  }
+
+  &:active .footer__icon{
+    opacity: 0.3;
+  }
+
+  &--phone{
+    padding: 0;
+    letter-spacing: normal;
+  }
+
+  &--academy{
+    width: 27px;
+    height: 34px;
+    background: url("../img/icons/logo-html.svg") no-repeat 50%;
+
+    &:hover{
+      opacity: 0.6;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer__icon{
+  fill: @yellow-logo;
+
+  &--login{
+    margin-right: 10px;
+  }
+
+  &--cart{
+    margin-right: 5px;
+  }
+
+  &--compare{
+    margin-right: 5px;
+  }
+}
+
+.footer__address{
+  .text();
+  margin: 0;
+  margin-right: 165px;
+  color: @white;
+  line-height: @line-height-link;
+  letter-spacing: normal;
+}
+
+.footer__nav{
+  width: 427px;
+  margin-right: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer__nav-link{
+  font-family: @font-gilroy;
+  font-size: @font-size-link;
+  font-weight: @extrabold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  color: @white;
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+}
