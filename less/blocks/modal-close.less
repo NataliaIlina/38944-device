@@ -1,0 +1,38 @@
+.modal-close{
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  width: 55px;
+  height: 55px;
+  background-color: @yellow-50;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &::before,
+  &::after{
+    content: "";
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -14px;
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: @white;
+    transform: rotate(45deg);
+  }
+
+  &::after{
+    transform: rotate(-45deg);
+  }
+
+  &:hover{
+    background-color: @yellow;
+  }
+
+  &:active{
+    background-color: @yellow-30;
+  }
+}

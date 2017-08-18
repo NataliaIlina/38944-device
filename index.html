@@ -339,7 +339,8 @@
            Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.
          </p>
          <a class="info-block__map" href=""></a>
-         <a class="button  button--info" href="#">Напишите нам</a>
+         <!-- 2 модификатора норм/нет? для js нужна кнопка -->
+         <a class="button  button--info  button--modal" href="#">Напишите нам</a>
        </section>
 
      </article>
@@ -406,7 +407,7 @@
 
 <!-- Модальное окно -->
    <article class="feedback">
-     <button class="feedback__close"></button>
+     <button class="modal-close  modal-close--feedback"></button>
 
      <form class="feedback__form" method="post" action="#">
 
@@ -429,5 +430,11 @@
    </form>
  </article>
 
+<article class="modal-map">
+  <button class="modal-close  modal-close--map"></button>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1124559361047!2d37.528458585274336!3d55.68703259644285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1502983481022" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+</article>
+
+  <script src="js/modal.js"></script>
   </body>
 </html>
