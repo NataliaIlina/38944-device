@@ -217,9 +217,9 @@
        </section>
 
        <div class="slider__controls">
-         <label class="slider__control" for="check1"></label>
-         <label class="slider__control" for="check2"></label>
-         <label class="slider__control" for="check3"></label>
+         <label class="slider__control" for="check1">&bull;</label>
+         <label class="slider__control" for="check2">&bull;</label>
+         <label class="slider__control" for="check3">&bull;</label>
        </div>
 
      </article>
@@ -236,7 +236,7 @@
          Виртуальная реальность
        </a>
 
-       <a class="popular__link  popular__link--selfie" href="#">
+       <a class="popular__link  popular__link--selfie" href="catalog.html">
          Моноподы для&nbsp;селфи
        </a>
        <a class="popular__link  popular__link--camera" href="#">
@@ -265,20 +265,20 @@
        <input class="services__check3" type="radio" name="radio" id="radio3">
 
        <div class="services__controls">
-
-         <label class="services__control" for="radio1">
+<!-- не понимаю, что надо сделать, чтоб слайдер переключался с клавиатуры -->
+         <label class="services__control" for="radio1" tabindex="0">
            <span class="button  button--services">
              Доставка
            </span>
          </label>
 
-         <label class="services__control" for="radio2">
+         <label class="services__control" for="radio2" tabindex="0">
            <span class="button  button--services">
              Гарантия
            </span>
          </label>
 
-         <label class="services__control" for="radio3">
+         <label class="services__control" for="radio3" tabindex="0">
            <span class="button  button--services">
              Кредит
            </span>
@@ -417,7 +417,12 @@
            </svg>
            Twitter</a>
        </section>
-       <a class="footer__link  footer__link--academy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+       <a class="footer__link  footer__link--academy" href="https://htmlacademy.ru/intensive/htmlcss">
+         <svg class="footer__icon" width="27" height="34">
+           <use xlink:href="#logo-html">
+         </svg>
+         HTML-Academy
+       </a>
      </div>
 
    </footer>

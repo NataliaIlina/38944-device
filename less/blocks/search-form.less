@@ -9,26 +9,25 @@
 }
 
 .search-form__label{
-
-  &::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-top: -8px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background: url("../img/icons/search.svg");
-  }
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/search.svg");
 }
 
 .search-form__input{
+  box-sizing: border-box;
   .link-font;
   width: 100%;
-  padding: 6px 0 6px;
+  height: 50px;
+  padding: 6px 0;
   padding-left: 38px;
   background: transparent;
   border: none;
+  border-bottom: 2px solid transparent;
   outline: none;
 
   &::placeholder{
@@ -45,15 +44,14 @@
   }
 
   &:focus + .search-form__button{
-    //  opacity: 1;
     display: block;
   }
 }
 // по ощущениям кнопка работает на костылях
 // еще при нажатии на кнопку пропадает бордер у инпута(что логично- фокус теряется), но смотритсся как-то не очень
+// если брать доступность с клавиатуры, то при нажатии tab после ввода в поле поиска фокус перескакивает на кнопку, но этого не видно - кнопка же скрыта при отсутствии фокуса на инпуте
 .search-form__button{
   .link-font();
-  // opacity: 0;
   display: none;
   width: 85px;
   padding: 6px 0 4px;
@@ -68,7 +66,6 @@
   }
 
   &:active{
-    // opacity: 1;
     display: block;
     color: @white-30;
     background-color: @black;
