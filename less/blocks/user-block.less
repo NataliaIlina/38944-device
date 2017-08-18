@@ -10,46 +10,34 @@
   .link-font();
   position: relative;
   padding: 6px 0;
-  padding-left: 27px;
 
-  &::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
+  &:hover .user-block__icon{
+    opacity: 0.8;
   }
 
-  &--login{
+  &:hover .user-block__icon--login{
+    opacity: 0.6;
+  }
 
-    &::before{
-      width: 13px;
-      height: 12px;
-      margin-top: -7px;
-      background: url("../img/icons/user.svg");
-    }
+  &:active .user-block__icon{
+    opacity: 0.3;
   }
 
   &--compare{
     margin-left: auto;
-    padding-left: 20px;
-
-    &::before{
-      width: 10px;
-      height: 10px;
-      margin-top: -6px;
-      background: url("../img/icons/compare.svg");
-    }
   }
 
   &--cart{
-    margin-left: 40px;
-    padding-left: 23px;
+    margin-left: 41px;
+  }
+}
 
-    &::before{
-      width: 12px;
-      height: 12px;
-      margin-top: -8px;
-      background: url("../img/icons/cart.svg");
-    }
+.user-block__icon{
+  margin-right: 6px;
+  fill: @black;
+
+  &--login{
+    margin-right: 10px;
+    fill: #272525;
   }
 }
