@@ -21,10 +21,10 @@
 
      <div class="main-header__navigation">
 
-      <a class="logo" href="index.html">Device</a>
+      <a class="logo">Device</a>
 
 
-       <form class="search-form">
+       <form class="search-form" method="get" action="/">
 
          <label class="search-form__label" for="search">
          </label>
@@ -38,21 +38,21 @@
        <div class="user-block">
            <a class="user-block__link   user-block__link--login" href="#">
              <svg class="user-block__icon  user-block__icon--login" width="13" height="12">
-               <use xlink:href="#user">
+               <use xlink:href="#user"></use>
              </svg>
              Войти
            </a>
 
            <a class="user-block__link  user-block__link--compare"  href="#">
              <svg class="user-block__icon" width="10" height="10">
-               <use xlink:href="#compare">
+               <use xlink:href="#compare"></use>
              </svg>
              Сравнить
            </a>
 
            <a class="user-block__link  user-block__link--cart" href="#">
              <svg class="user-block__icon" width="12" height="12">
-               <use xlink:href="#cart">
+               <use xlink:href="#cart"></use>
              </svg>
              Корзина
            </a>
@@ -137,6 +137,8 @@
        <input class="slider__check2" type="radio" name="radio-check" id="check2">
        <input class="slider__check3" type="radio" name="radio-check" id="check3">
 
+    <div class="slider__inner">
+      <div class="slider__slides">
        <section class="slider__slide slider__slide--first">
         <div class="slider__content">
          <h2 class="slider__title">
@@ -215,6 +217,8 @@
          </table>
         </div>
        </section>
+     </div>
+   </div>
 
        <div class="slider__controls">
          <label class="slider__control" for="check1">&bull;</label>
@@ -284,6 +288,7 @@
            </span>
          </label>
 
+
        </div>
 
       <div class="services__slides">
@@ -296,6 +301,7 @@
            Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.
          </p>
        </section>
+
 
        <section class="services__slide  services__slide--warranty">
          <h2 class="services__title">Гарантия</h2>
@@ -371,17 +377,17 @@
        <div class="footer__user-block">
          <a class="footer__link" href="#">
            <svg class="footer__icon  footer__icon--login" width="13" height="12">
-             <use xlink:href="#user">
+             <use xlink:href="#user"></use>
            </svg>
            Войти</a>
          <a class="footer__link" href="#">
            <svg class="footer__icon   footer__icon--compare" width="10" height="10">
-             <use xlink:href="#compare">
+             <use xlink:href="#compare"></use>
            </svg>
            Сравнить</a>
          <a class="footer__link" href="#">
            <svg class="footer__icon  footer__icon--cart" width="12" height="12">
-             <use xlink:href="#cart">
+             <use xlink:href="#cart"></use>
            </svg>
            Корзина</a>
        </div>
@@ -403,25 +409,27 @@
        <section class="socials">
          <a class="socials__link" href="#">
            <svg class="socials__icon" width="32" height="32">
-             <use xlink:href="#fb">
+             <use xlink:href="#fb"></use>
            </svg>
-           Facebook</a>
+           <span class="visually-hidden">Facebook</span>
+         </a>
          <a class="socials__link" href="#">
            <svg class="socials__icon" width="32" height="32">
-             <use xlink:href="#ig">
+             <use xlink:href="#ig"></use>
            </svg>
-           Instagram</a>
+           <span class="visually-hidden">Instagram</span></a>
          <a class="socials__link" href="#">
            <svg class="socials__icon" width="32" height="32">
-             <use xlink:href="#twitter">
+             <use xlink:href="#twitter"></use>
            </svg>
-           Twitter</a>
+           <span class="visually-hidden">Twitter</span></a>
        </section>
+
        <a class="footer__link  footer__link--academy" href="https://htmlacademy.ru/intensive/htmlcss">
          <svg class="footer__icon" width="27" height="34">
-           <use xlink:href="#logo-html">
+           <use xlink:href="#logo-html"></use>
          </svg>
-         HTML-Academy
+         <span class="visually-hidden">HTML-Academy</span>
        </a>
      </div>
 
@@ -429,7 +437,7 @@
 
 <!-- Модальное окно -->
    <article class="feedback">
-     <button class="modal-close  modal-close--feedback"></button>
+     <button class="modal-close  modal-close--feedback"><span class="visually-hidden">Закрыть</span></button>
 
      <form class="feedback__form" method="post" action="#">
 
@@ -453,8 +461,8 @@
  </article>
 
 <article class="modal-map">
-  <button class="modal-close  modal-close--map"></button>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1124559361047!2d37.528458585274336!3d55.68703259644285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1502983481022" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <button class="modal-close  modal-close--map"><span class="visually-hidden">Закрыть</span></button>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1124559361047!2d37.528458585274336!3d55.68703259644285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1502983481022" width="960" height="560" style="border:0" allowfullscreen></iframe>
 </article>
 
   <script src="js/modal.js"></script>

@@ -1,0 +1,91 @@
+.product-card{
+  position: relative;
+  width: 360px;
+  min-height: 495px;
+  margin-bottom: 10px;
+// или лучше ховер на картинку повесить?
+  &:hover .product-card__buy{
+    display: flex;
+  }
+
+  &--new::after{
+    content: "new";
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    padding: 21px 0;
+    border: 2px solid @black;
+    border-radius: 50%;
+    font-family: @font-gilroy;
+    font-size: 14px;
+    font-weight: @extrabold;
+    color: @black;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.2;
+  }
+}
+
+.product-card__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+.product-card__link{
+  .link();
+  max-width: 260px;
+  font-family: @font-gilroy;
+  font-size: @font-size-link;
+  font-weight: @extrabold;
+  color: @black;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.product-card__price{
+  font-family: @font-gilroy;
+  font-size: 16px;
+  font-weight: @light;
+  letter-spacing: 0.01em;
+}
+
+.product-card__buy{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 360px;
+  height: 380px;
+  padding-top: 170px;
+  background-color: @gray-light-70;
+}
+
+.product-card__compare{
+  font-family: @font-open-sans;
+  font-size: 13px;
+  line-height: @line-height-link;
+  color: @black;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+
+
+  &:hover,
+  &:focus{
+    opacity: 1;
+  }
+
+  &:active{
+    opacity: 0.2;
+  }
+}
