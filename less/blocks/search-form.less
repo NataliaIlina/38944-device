@@ -1,12 +1,12 @@
-// блок имеет отступ слева в IE, не понимаю от чего он
 .search-form{
   position: relative;
-  height: 50px;
-  width: 440px;
-  margin-bottom: 29px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  height: 50px;
+  width: 440px;
+  margin-bottom: 29px;
+  margin-right: auto;
 }
 
 .search-form__label{
@@ -48,9 +48,7 @@
     display: block;
   }
 }
-// по ощущениям кнопка работает на костылях
-// еще при нажатии на кнопку пропадает бордер у инпута(что логично- фокус теряется), но смотритсся как-то не очень
-// если брать доступность с клавиатуры, то при нажатии tab после ввода в поле поиска фокус перескакивает на кнопку, но этого не видно - кнопка же скрыта при отсутствии фокуса на инпуте
+
 .search-form__button{
   .link-font();
   display: none;

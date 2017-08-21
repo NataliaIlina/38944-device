@@ -1,11 +1,10 @@
-// переделаю на слайдер без позиционирования
 .slider{
   position: relative;
   min-height: 500px;
   margin-top: -110px;
   margin-bottom: 92px;
 
-  & input[type=radio]{
+  & input[type="radio"]{
     display: none;
   }
 }
@@ -165,9 +164,9 @@
   }
 }
 // меняем вид соотв контрола в зависимости от состояния радио-кнопки
-.slider__check1:checked ~ .slider__controls label[for=check1]::after,
-.slider__check2:checked ~ .slider__controls label[for=check2]::after,
-.slider__check3:checked ~ .slider__controls label[for=check3]::after{
+.slider__check1:checked ~ .slider__controls label[for="check1"]::after,
+.slider__check2:checked ~ .slider__controls label[for="check2"]::after,
+.slider__check3:checked ~ .slider__controls label[for="check3"]::after{
   display: block;
 }
 // привязываем слайды к радио-кнопкам

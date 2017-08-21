@@ -1,20 +1,17 @@
 .services{
   min-height: 288px;
   background-color: @gray;
-  // border: 1px solid @gray;
   padding-top: 1px;
   margin-bottom: 93px;
 }
-// отрицательный margin поднимает и верхний блок с фоном
-// но если ему задать бордер- то нет)   ???
-// поняла почему- схлопывание же..
+
 .services__inner{
   .inner();
   margin-top: -100px;
   display: flex;
   align-items: flex-start;
 
-  & input[type=radio]{
+  & input[type="radio"]{
     display: none;
   }
 }
@@ -82,11 +79,9 @@
   transform: translate(-1520px);
 }
 
-// очень странная реализация кнопок-переключателей
-// лаконичнее не придумала ничего, выслушаю замечания и предложения, как можно сделать проще.
-.services__check1:checked ~ .services__controls label[for=radio1] span,
-.services__check2:checked ~ .services__controls label[for=radio2] span,
-.services__check3:checked ~ .services__controls label[for=radio3] span{
+.services__check1:checked ~ .services__controls label[for="radio1"] span,
+.services__check2:checked ~ .services__controls label[for="radio2"] span,
+.services__check3:checked ~ .services__controls label[for="radio3"] span{
   background-color: @black;
   color: @yellow-text;
 
@@ -95,8 +90,8 @@
   }
 }
 
-.services__check1:checked ~ .services__controls label[for=radio1],
-.services__check2:checked ~ .services__controls label[for=radio2],
-.services__check3:checked ~ .services__controls label[for=radio3]{
+.services__check1:checked ~ .services__controls label[for="radio1"],
+.services__check2:checked ~ .services__controls label[for="radio2"],
+.services__check3:checked ~ .services__controls label[for="radio3"]{
   background-color: @black;
 }
