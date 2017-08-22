@@ -103,14 +103,17 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: @light;
-  color: @black;
-  opacity: 0.2;
+  color: @black-20;
 }
 
 .filter__num{
   width: 70px;
   border: none;
   background-color: transparent;
+
+  &::placeholder{
+    color: @black-20;
+  }
 }
 
 // checkbox
@@ -152,6 +155,15 @@
     opacity: 1;
   }
 }
+
+#check_black:focus + label,
+#check_white:focus + label,
+#check_blue:focus + label,
+#check_red:focus + label,
+#check_pink:focus + label,{
+   outline: 2px solid #5B9DD9;
+}
+
 
 #check_black:checked + label::before,
 #check_white:checked + label::before,
@@ -217,6 +229,11 @@
   &:active::after{
     opacity: 1;
   }
+}
+
+#check_yes:focus + label,
+#check_no:focus + label{
+   outline: 2px solid #5B9DD9;
 }
 
 #check_yes:checked + label::after,

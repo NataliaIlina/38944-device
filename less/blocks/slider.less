@@ -159,6 +159,12 @@
     border-radius: 50%;
   }
 }
+// переносим фокус с инпутов на лейблы
+.slider__check1:focus ~ .slider__controls label[for="check1"],
+.slider__check2:focus ~ .slider__controls label[for="check2"],
+.slider__check3:focus ~ .slider__controls label[for="check3"]{
+   outline: 2px solid #5B9DD9;
+}
 // меняем вид соотв контрола в зависимости от состояния радио-кнопки
 .slider__check1:checked ~ .slider__controls label[for="check1"]::after,
 .slider__check2:checked ~ .slider__controls label[for="check2"]::after,

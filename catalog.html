@@ -148,8 +148,6 @@
       <a class="breadcrumbs__link">Моноподы для селфи</a>
     </section>
 
-<!-- Обертка для фильтра и каталога -->
-
    <div class="main-content__inner">
      <section class="sort">
        <div class="sort__inner">
@@ -171,10 +169,10 @@
        </div>
 
        <div class="sort__controls">
-         <a class="sort__control  sort__control--up">
+         <a class="sort__control  sort__control--up" href="#">
            <span class="visually-hidden">Сортировка по возрастанию</span>
          </a>
-         <a class="sort__control  sort__control--down  sort__control--active">
+         <a class="sort__control  sort__control--down  sort__control--active" href="#">
            <span class="visually-hidden">Сортировка по убыванию</span>
          </a>
        </div>
@@ -197,10 +195,10 @@
            <div class="filter__scale">
              <div class="filter__bar"></div>
              <div class="filter__bar  filter__bar--active"></div>
-             <div class="filter__control" style="left:-5px">
+             <div class="filter__control" style="left:-5px" tabindex="0">
               <span class="visually-hidden">Минимальная цена</span>
              </div>
-             <div class="filter__control" style="left:110px">
+             <div class="filter__control" style="left:110px" tabindex="0">
                <span class="visually-hidden">Максимальная цена</span>
              </div>
            </div>
@@ -224,19 +222,19 @@
             </legend>
 
             <input class="visually-hidden" type="checkbox" name="check-color" value="black" id="check_black" checked>
-            <label class="filter__checkbox" for="check_black" tabindex="0">Черный</label>
+            <label class="filter__checkbox" for="check_black">Черный</label>
 
             <input class="visually-hidden" type="checkbox" name="check-color" value="white" id="check_white">
-            <label class="filter__checkbox" for="check_white" tabindex="0">Белый</label>
+            <label class="filter__checkbox" for="check_white">Белый</label>
 
             <input class="visually-hidden" type="checkbox" name="check-color" value="blue" id="check_blue" checked>
-            <label class="filter__checkbox" for="check_blue" tabindex="0">Синий</label>
+            <label class="filter__checkbox" for="check_blue">Синий</label>
 
             <input class="visually-hidden" type="checkbox" name="check-color" value="red" id="check_red" checked>
-            <label class="filter__checkbox" for="check_red" tabindex="0">Красный</label>
+            <label class="filter__checkbox" for="check_red">Красный</label>
 
             <input class="visually-hidden" type="checkbox" name="check-color" value="pink" id="check_pink">
-            <label class="filter__checkbox" for="check_pink" tabindex="0">Розовый</label>
+            <label class="filter__checkbox" for="check_pink">Розовый</label>
 
           </fieldset>
 
@@ -246,10 +244,10 @@
             </legend>
 
             <input class="visually-hidden" type="radio" name="radio-check" value="check-yes" id="check_yes" checked>
-            <label class="filter__radio" for="check_yes" tabindex="0">Есть</label>
+            <label class="filter__radio" for="check_yes">Есть</label>
 
             <input class="visually-hidden" type="radio" name="radio-check" value="check-no" id="check_no">
-            <label class="filter__radio" for="check_no" tabindex="0">Нет</label>
+            <label class="filter__radio" for="check_no">Нет</label>
 
           </fieldset>
 
