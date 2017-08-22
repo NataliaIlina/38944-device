@@ -136,9 +136,9 @@
 
 
      <article class="slider">
-       <input class="slider__check1" type="radio" name="radio-check" id="check1" checked>
-       <input class="slider__check2" type="radio" name="radio-check" id="check2">
-       <input class="slider__check3" type="radio" name="radio-check" id="check3">
+       <input class="slider__check1  visually-hidden" type="radio" name="radio-check" id="check1" checked>
+       <input class="slider__check2  visually-hidden" type="radio" name="radio-check" id="check2">
+       <input class="slider__check3  visually-hidden" type="radio" name="radio-check" id="check3">
 
     <div class="slider__inner">
       <div class="slider__slides">
@@ -224,9 +224,15 @@
     </div>
 
        <div class="slider__controls">
-         <label class="slider__control" for="check1" tabindex="0">&bull;</label>
-         <label class="slider__control" for="check2" tabindex="0">&bull;</label>
-         <label class="slider__control" for="check3" tabindex="0">&bull;</label>
+         <label class="slider__control" for="check1" tabindex="0">
+           <span class="visually-hidden">Первый слайд</span>
+         </label>
+         <label class="slider__control" for="check2" tabindex="0">
+           <span class="visually-hidden">Второй слайд</span>
+         </label>
+         <label class="slider__control" for="check3" tabindex="0">
+           <span class="visually-hidden">Третий слайд</span>
+         </label>
        </div>
 
      </article>
@@ -238,6 +244,7 @@
    <main class="main-content">
 
      <section class="popular">
+       <h2 class="visually-hidden">Категории товаров</h2>
 
        <a class="popular__link  popular__link--virtual" href="#">
          Виртуальная реальность
@@ -267,12 +274,11 @@
 
        <div class="services__inner">
 
-       <input class="services__check1" type="radio" name="radio" id="radio1" checked>
-       <input class="services__check2" type="radio" name="radio" id="radio2">
-       <input class="services__check3" type="radio" name="radio" id="radio3">
+       <input class="services__check1  visually-hidden" type="radio" name="radio" id="radio1" checked>
+       <input class="services__check2  visually-hidden" type="radio" name="radio" id="radio2">
+       <input class="services__check3  visually-hidden" type="radio" name="radio" id="radio3">
 
        <div class="services__controls">
-<!-- не понимаю, что надо сделать, чтоб слайдер переключался с клавиатуры -->
          <label class="services__control" for="radio1" tabindex="0">
            <span class="button  button--services">
              Доставка
@@ -329,6 +335,7 @@
      </article>
 
      <section class="popular-brands">
+       <h2 class="visually-hidden">Популярные бренды</h2>
        <a class="popular-brands__link  popular-brands__link--brand1" href="#">DJI</a>
        <a class="popular-brands__link  popular-brands__link--brand2" href="#">SPGadgets</a>
        <a class="popular-brands__link  popular-brands__link--brand3" href="#">GoPro</a>
@@ -336,7 +343,6 @@
      </section>
 
      <article class="info-block">
-
        <section class="info-block__column  info-block__column--left">
          <h2 class="info-block__title">О нас</h2>
          <p class="info-block__description">
@@ -410,6 +416,7 @@
 
      <div class="footer__inner">
        <section class="socials">
+         <h2 class="visually-hidden">Мы в социальных сетях</h2>
          <a class="socials__link" href="#">
            <svg class="socials__icon" width="32" height="32">
              <use xlink:href="#fb"></use>
@@ -440,13 +447,13 @@
 
 <!-- Модальное окно -->
    <article class="feedback">
-     <button class="modal-close  modal-close--feedback"><span class="visually-hidden">Закрыть</span></button>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
 
      <form class="feedback__form" method="post" action="#">
 
        <label class="feedback__label  feedback__label--name">
          Ваше имя:<br>
-         <input class="feedback__input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
+         <input class="feedback__input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required autofocus>
        </label>
 
        <label class="feedback__label  feedback__label--email">
@@ -460,12 +467,20 @@
        </label>
 
      <button class="button  button--feedback" type="submit">Отправить</button>
+
    </form>
+
+     <button class="modal-close  modal-close--feedback" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
+
  </article>
 
 <article class="modal-map">
-  <button class="modal-close  modal-close--map" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
+  <h2 class="visually-hidden">Как нас найти</h2>
+
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1124559361047!2d37.528458585274336!3d55.68703259644285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1502983481022" width="960" height="560" style="border:0" allowfullscreen></iframe>
+
+  <button class="modal-close  modal-close--map" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
+
 </article>
 
   <script src="js/modal.js"></script>

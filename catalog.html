@@ -197,8 +197,12 @@
            <div class="filter__scale">
              <div class="filter__bar"></div>
              <div class="filter__bar  filter__bar--active"></div>
-             <div class="filter__control" style="left:-5px">&bull;</div>
-             <div class="filter__control" style="left:110px">&bull;</div>
+             <div class="filter__control" style="left:-5px">
+              <span class="visually-hidden">Минимальная цена</span>
+             </div>
+             <div class="filter__control" style="left:110px">
+               <span class="visually-hidden">Максимальная цена</span>
+             </div>
            </div>
 
            <label class="filter__label">
@@ -219,19 +223,19 @@
               Цвет
             </legend>
 
-            <input type="checkbox" name="check-color" value="black" id="check_black" checked>
+            <input class="visually-hidden" type="checkbox" name="check-color" value="black" id="check_black" checked>
             <label class="filter__checkbox" for="check_black" tabindex="0">Черный</label>
 
-            <input type="checkbox" name="check-color" value="white" id="check_white">
+            <input class="visually-hidden" type="checkbox" name="check-color" value="white" id="check_white">
             <label class="filter__checkbox" for="check_white" tabindex="0">Белый</label>
 
-            <input type="checkbox" name="check-color" value="blue" id="check_blue" checked>
+            <input class="visually-hidden" type="checkbox" name="check-color" value="blue" id="check_blue" checked>
             <label class="filter__checkbox" for="check_blue" tabindex="0">Синий</label>
 
-            <input type="checkbox" name="check-color" value="red" id="check_red" checked>
+            <input class="visually-hidden" type="checkbox" name="check-color" value="red" id="check_red" checked>
             <label class="filter__checkbox" for="check_red" tabindex="0">Красный</label>
 
-            <input type="checkbox" name="check-color" value="pink" id="check_pink">
+            <input class="visually-hidden" type="checkbox" name="check-color" value="pink" id="check_pink">
             <label class="filter__checkbox" for="check_pink" tabindex="0">Розовый</label>
 
           </fieldset>
@@ -241,10 +245,10 @@
               Bluetooth
             </legend>
 
-            <input type="radio" name="radio-check" value="check-yes" id="check_yes" checked>
+            <input class="visually-hidden" type="radio" name="radio-check" value="check-yes" id="check_yes" checked>
             <label class="filter__radio" for="check_yes" tabindex="0">Есть</label>
 
-            <input type="radio" name="radio-check" value="check-no" id="check_no">
+            <input class="visually-hidden" type="radio" name="radio-check" value="check-no" id="check_no">
             <label class="filter__radio" for="check_no" tabindex="0">Нет</label>
 
           </fieldset>
@@ -371,6 +375,7 @@
 
     <div class="footer__inner">
       <section class="socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <a class="socials__link" href="#">
           <svg class="socials__icon" width="32" height="32">
             <use xlink:href="#fb"></use>
