@@ -740,9 +740,6 @@ img {
   margin-top: -110px;
   margin-bottom: 92px;
 }
-.slider input[type="radio"] {
-  display: none;
-}
 .slider__inner {
   width: 1160px;
   overflow: hidden;
@@ -1090,9 +1087,6 @@ img {
   display: flex;
   -webkit-box-align: start;
           align-items: flex-start;
-}
-.services__inner input[type="radio"] {
-  display: none;
 }
 .services__controls {
   width: 278px;
@@ -1588,7 +1582,8 @@ img {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   background-color: #f0c52e;
 }
 .modal-close:active {
@@ -1761,9 +1756,6 @@ img {
 .filter__color-select {
   min-height: 285px;
 }
-.filter__color-select input[type="checkbox"] {
-  display: none;
-}
 .filter__color-select .filter__sub-title {
   padding-bottom: 0;
 }
@@ -1806,9 +1798,6 @@ img {
 }
 .filter__select-bluetooth {
   min-height: 165px;
-}
-.filter__select-bluetooth input[type="radio"] {
-  display: none;
 }
 .filter__select-bluetooth .filter__sub-title {
   padding-bottom: 0;
