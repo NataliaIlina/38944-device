@@ -887,6 +887,11 @@ img {
   border: 1px solid #000;
   border-radius: 50%;
 }
+.slider__check1:focus ~ .slider__controls label[for="check1"],
+.slider__check2:focus ~ .slider__controls label[for="check2"],
+.slider__check3:focus ~ .slider__controls label[for="check3"] {
+  outline: 2px solid #5B9DD9;
+}
 .slider__check1:checked ~ .slider__controls label[for="check1"]::after,
 .slider__check2:checked ~ .slider__controls label[for="check2"]::after,
 .slider__check3:checked ~ .slider__controls label[for="check3"]::after {
@@ -1141,6 +1146,11 @@ img {
   color: #464646;
   letter-spacing: 0.01em;
   width: 450px;
+}
+.services__check1:focus ~ .services__controls label[for="radio1"],
+.services__check2:focus ~ .services__controls label[for="radio2"],
+.services__check3:focus ~ .services__controls label[for="radio3"] {
+  outline: 2px solid #5B9DD9;
 }
 .services__check1:checked ~ .services__slides .services__slides-inner {
   -webkit-transform: translate(0);
@@ -1745,13 +1755,21 @@ img {
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
-  color: #000;
-  opacity: 0.2;
+  color: rgba(0, 0, 0, 0.2);
 }
 .filter__num {
   width: 70px;
   border: none;
   background-color: transparent;
+}
+.filter__num::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.filter__num:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.filter__num::placeholder {
+  color: rgba(0, 0, 0, 0.2);
 }
 .filter__color-select {
   min-height: 285px;
@@ -1785,6 +1803,13 @@ img {
 }
 .filter__checkbox:active::before {
   opacity: 1;
+}
+#check_black:focus + label,
+#check_white:focus + label,
+#check_blue:focus + label,
+#check_red:focus + label,
+#check_pink:focus + label {
+  outline: 2px solid #5B9DD9;
 }
 #check_black:checked + label::before,
 #check_white:checked + label::before,
@@ -1843,6 +1868,10 @@ img {
 .filter__radio:active::before,
 .filter__radio:active::after {
   opacity: 1;
+}
+#check_yes:focus + label,
+#check_no:focus + label {
+  outline: 2px solid #5B9DD9;
 }
 #check_yes:checked + label::after,
 #check_no:checked + label::after {
