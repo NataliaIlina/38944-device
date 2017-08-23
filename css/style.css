@@ -1478,7 +1478,6 @@ img {
 }
 .feedback {
   position: fixed;
-  display: none;
   z-index: 100;
   top: 50%;
   margin-top: -276px;
@@ -1601,7 +1600,6 @@ img {
 }
 .modal-map {
   position: fixed;
-  display: none;
   z-index: 100;
   top: 50%;
   margin-top: -280px;
