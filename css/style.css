@@ -429,6 +429,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+@-webkit-keyframes modal {
+  0% {
+    -webkit-transform: translateX(-3000px);
+            transform: translateX(-3000px);
+  }
+  70% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes modal {
+  0% {
+    -webkit-transform: translateX(-3000px);
+            transform: translateX(-3000px);
+  }
+  70% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 .main-header {
   box-sizing: border-box;
   width: 1200px;
@@ -682,6 +710,10 @@ img {
 .main-nav__link--sub {
   padding-right: 27px;
 }
+.main-nav__link--sub:focus + .sub-nav {
+  display: -webkit-box;
+  display: flex;
+}
 .main-nav__link--sub::before,
 .main-nav__link--sub::after {
   content: "";
@@ -870,8 +902,9 @@ img {
 }
 .slider__control {
   position: relative;
-  height: 10px;
-  width: 10px;
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
   text-indent: 100%;
   overflow: hidden;
   border: 1px solid #000;
@@ -894,7 +927,7 @@ img {
 .slider__check1:focus ~ .slider__controls label[for="check1"],
 .slider__check2:focus ~ .slider__controls label[for="check2"],
 .slider__check3:focus ~ .slider__controls label[for="check3"] {
-  outline: 2px solid #5B9DD9;
+  border: 2px solid #000;
 }
 .slider__check1:checked ~ .slider__controls label[for="check1"]::after,
 .slider__check2:checked ~ .slider__controls label[for="check2"]::after,
@@ -1154,7 +1187,7 @@ img {
 .services__check1:focus ~ .services__controls label[for="radio1"],
 .services__check2:focus ~ .services__controls label[for="radio2"],
 .services__check3:focus ~ .services__controls label[for="radio3"] {
-  outline: 2px solid #5B9DD9;
+  outline: 1px solid #5B9DD9;
 }
 .services__check1:checked ~ .services__slides .services__slides-inner {
   -webkit-transform: translate(0);
@@ -1314,7 +1347,7 @@ img {
   height: 222px;
   margin-top: 24px;
   margin-bottom: 65px;
-  background: url("../img/map.jpg");
+  background: #efefef url("../img/map.jpg");
 }
 .footer {
   width: 100%;
@@ -1495,6 +1528,8 @@ img {
   background-color: #fff;
   color: #000;
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+  -webkit-animation: modal 0.6s;
+          animation: modal 0.6s;
 }
 .feedback--show {
   display: block;
@@ -1613,8 +1648,10 @@ img {
   box-sizing: border-box;
   width: 960px;
   min-height: 559px;
-  background: url("../img/map-big.jpg");
+  background: #efefef url("../img/map-big.jpg");
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+  -webkit-animation: modal 0.6s;
+          animation: modal 0.6s;
 }
 .modal-map--show {
   display: block;
@@ -1812,7 +1849,7 @@ img {
 #check_blue:focus + label,
 #check_red:focus + label,
 #check_pink:focus + label {
-  outline: 2px solid #5B9DD9;
+  opacity: 0.6;
 }
 #check_black:checked + label::before,
 #check_white:checked + label::before,
@@ -1874,7 +1911,7 @@ img {
 }
 #check_yes:focus + label,
 #check_no:focus + label {
-  outline: 2px solid #5B9DD9;
+  opacity: 0.6;
 }
 #check_yes:checked + label::after,
 #check_no:checked + label::after {
@@ -2008,6 +2045,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   opacity: 0.2;
+}
+.product-card__image {
+  display: block;
+  width: 360px;
+  height: 380px;
+  background-color: #efefef;
 }
 .product-card__info {
   display: -webkit-box;
