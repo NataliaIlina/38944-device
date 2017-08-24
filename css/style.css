@@ -1236,28 +1236,35 @@ img {
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
-  opacity: 0.2;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   transition: all 0.5s;
 }
-.popular-brands__link:hover,
-.popular-brands__link:focus {
-  opacity: 1;
-  -webkit-filter: none;
-          filter: none;
-}
 .popular-brands__link--brand1 {
-  background: url("../img/logo-1.jpg");
+  background-image: url("../img/logo-1.jpg");
+}
+.popular-brands__link--brand1:hover,
+.popular-brands__link--brand1:focus {
+  background-image: url("../img/logo-1-color.jpg");
 }
 .popular-brands__link--brand2 {
-  background: url("../img/logo-2.jpg");
+  background-image: url("../img/logo-2.jpg");
+}
+.popular-brands__link--brand2:hover,
+.popular-brands__link--brand2:focus {
+  background-image: url("../img/logo-2-color.jpg");
 }
 .popular-brands__link--brand3 {
-  background: url("../img/logo-3.jpg");
+  background-image: url("../img/logo-3.jpg");
+}
+.popular-brands__link--brand3:hover,
+.popular-brands__link--brand3:focus {
+  background-image: url("../img/logo-3-color.jpg");
 }
 .popular-brands__link--brand4 {
-  background: url("../img/logo-4.jpg");
+  background-image: url("../img/logo-4.jpg");
+}
+.popular-brands__link--brand4:hover,
+.popular-brands__link--brand4:focus {
+  background-image: url("../img/logo-4-color.jpg");
 }
 .info-block {
   box-sizing: border-box;

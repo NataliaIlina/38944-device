@@ -12,29 +12,42 @@
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
-  opacity: 0.2;
-  filter: grayscale(100%);
   transition: all 0.5s;
 
-  &:hover,
-  &:focus{
-    opacity: 1;
-    filter: none;
-  }
-
   &--brand1{
-    background: url("../img/logo-1.jpg");
+    background-image: url("../img/logo-1.jpg");
+
+    &:hover,
+    &:focus{
+      background-image: url("../img/logo-1-color.jpg");
+    }
   }
 
   &--brand2{
-    background: url("../img/logo-2.jpg");
+    background-image: url("../img/logo-2.jpg");
+
+    &:hover,
+    &:focus{
+      background-image: url("../img/logo-2-color.jpg");
+    }
   }
 
   &--brand3{
-    background: url("../img/logo-3.jpg");
+    background-image: url("../img/logo-3.jpg");
+
+    &:hover,
+    &:focus{
+      background-image: url("../img/logo-3-color.jpg");
+    }
   }
 
   &--brand4{
-    background: url("../img/logo-4.jpg");
+    background-image: url("../img/logo-4.jpg");
+
+    &:hover,
+    &:focus{
+      background-image: url("../img/logo-4-color.jpg");
+    }
   }
+
 }
