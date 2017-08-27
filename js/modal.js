@@ -5,7 +5,7 @@ var map = document.querySelector(".modal-map");
 var mapOpen = document.querySelector(".info-block__map");
 var mapClose = document.querySelector(".modal-close--map");
 var form = feedback.querySelector(".feedback__form");
-var name = form.querySelector("[name=name]");
+var userName = form.querySelector("[name=name]");
 var email = form.querySelector("[name=email]");
 
 
@@ -26,7 +26,7 @@ function modalOpen(button, modal, buttonClose) {
 };
 
 form.addEventListener("submit", function(event) {
-  if(!name.value || !email.value){
+  if(!userName.value || !email.value){
     event.preventDefault();
     if(feedback.classList.contains("modal-error")){
       feedback.classList.remove("modal-error");
@@ -35,7 +35,7 @@ form.addEventListener("submit", function(event) {
     feedback.classList.add("modal-error");
   }
   else {
-    localStorage.setItem('name', name.value);
+    localStorage.setItem('name', userName.value);
   }
 });
 
