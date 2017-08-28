@@ -13,14 +13,14 @@ function modalOpen(button, modal, buttonClose) {
  if(modal){
   button.addEventListener("click", function (event) {
     event.preventDefault();
-    modal.style.display = "block";
+    modal.classList.add("modal-show");
   });
   buttonClose.addEventListener("click", function (event) {
     event.preventDefault();
     if(modal.classList.contains("modal-error")){
       modal.classList.remove("modal-error");
     }
-    modal.style.display = "none";
+    modal.classList.remove("modal-show");
   });
   }
 };
